@@ -1,0 +1,15 @@
+.idea/
+target/
+nacos_full.iml
+
+consumer/target/
+consumer/consumer.iml
+
+provider/target/
+provider/provider.iml
+
+api/target/
+api/api.iml
+
+src/
+
