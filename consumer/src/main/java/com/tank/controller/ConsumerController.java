@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.concurrent.CompletableFuture;
+
 import static com.tank.api.constants.UrlPrefix.CONSUMER_URL_PREFIX_FOR;
 
 /**
@@ -20,6 +22,7 @@ public class ConsumerController {
 
   @GetMapping("/helloConsumer")
   public ResponseEntity<CustomerBody> helloConsumer() {
+    
     return this.restTemplate.getForEntity("http://provider/service/api/v1/hello", CustomerBody.class);
   }
 
