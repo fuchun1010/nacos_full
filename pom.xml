@@ -29,8 +29,8 @@
         <lombok.version>1.18.12</lombok.version>
         <vavr.version>0.10.2</vavr.version>
         <guava.version>23.0</guava.version>
-        <nacos-config.version>0.2.7</nacos-config.version>
 
+        <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
     </properties>
 
     <dependencies>
@@ -61,11 +61,6 @@
             <version>${guava.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.alibaba.boot</groupId>
-            <artifactId>nacos-config-spring-boot-starter</artifactId>
-            <version>${nacos-config.version}</version>
-        </dependency>
 
         <!-- spring boot dependency -->
         <dependency>
@@ -79,7 +74,21 @@
             <scope>test</scope>
         </dependency>
 
+
     </dependencies>
+
+    <!-- spring cloud dependency -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <modules>
         <module>provider</module>
