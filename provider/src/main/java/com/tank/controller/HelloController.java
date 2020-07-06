@@ -6,13 +6,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import static com.tank.api.constants.UrlPrefix.urlPrefixFor;
-
 /**
  * @author tank198435163.com
  */
 @RestController
-@RequestMapping(urlPrefixFor)
+@RequestMapping("/service/api/v1")
 public class HelloController {
 
   @GetMapping("/hello")

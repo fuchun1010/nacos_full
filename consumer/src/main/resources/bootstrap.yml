@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 7cc2410d-9371-46fd-a5f2-cf2b4596d88c
+  application:
+    name: consumer
+
+server:
+  port: 7006
