@@ -11,7 +11,7 @@ import java.util.Objects;
 /**
  * @author tank198435163.com
  */
-public class ResponseBody {
+public final class ResponseBody {
 
   public <T> boolean addValue(@NonNull final String jsonKey, @NonNull final T jsonValue) {
     val dataKey = Try.of(() -> jsonKey).filter(key -> key.trim().length() > 0)

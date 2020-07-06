@@ -5,5 +5,5 @@ package com.tank.api.constants;
  */
 public interface UrlPrefix {
 
-  String urlPrefixFor = "/provider/api/v1";
+  String URL_PREFIX_FOR = "/provider/api/v1";
 }
