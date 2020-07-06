@@ -8,7 +8,7 @@ import org.junit.Test;
 /**
  * @author tank198435163.com
  */
-public class ResponseBodyTest {
+public class CustomerBodyTest {
 
   @Test
   public void responseBodyWorkNormalTest() {
@@ -32,10 +32,10 @@ public class ResponseBodyTest {
 
   @Before
   public void initResponseBody() {
-    this.responseBody = new ResponseBody();
+    this.responseBody = new CustomerBody();
   }
 
-  private ResponseBody responseBody;
+  private CustomerBody responseBody;
 
   private static final String JSON_VALUE = "Cq";
 
