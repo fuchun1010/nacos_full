@@ -22,7 +22,7 @@ public class ConsumerController {
 
   @GetMapping("/helloConsumer")
   public ResponseEntity<CustomerBody> helloConsumer() {
-    
+
     return this.restTemplate.getForEntity("http://provider/service/api/v1/hello", CustomerBody.class);
   }
 
