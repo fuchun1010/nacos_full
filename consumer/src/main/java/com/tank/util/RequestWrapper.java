@@ -38,6 +38,7 @@ public class RequestWrapper {
             continue;
           }
           val parameterClazz = params[0];
+          //TODO 需要补充double,float,bigDecimal类型的判断
           if (parameterClazz == Integer.class || parameterClazz == int.class) {
             method.invoke(instance, Integer.parseInt(value));
           } else if (parameterClazz == String.class) {
