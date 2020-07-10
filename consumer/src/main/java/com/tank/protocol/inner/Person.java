@@ -3,16 +3,18 @@ package com.tank.protocol.inner;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
+
 /**
  * @author tank198435163.com
  */
 @Getter
 @Setter
-public class Person {
+public class Person implements Serializable {
 
-  String name;
+  private String name;
 
-  Integer gender;
+  private Integer gender;
 
-  int grade;
+  private int grade;
 }
