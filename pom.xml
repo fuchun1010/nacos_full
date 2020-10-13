@@ -25,7 +25,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <skipTests>true</skipTests>
 
-        <junit.version>4.13</junit.version>
+        <junit.version>4.13.1</junit.version>
         <lombok.version>1.18.12</lombok.version>
         <vavr.version>0.10.2</vavr.version>
         <guava.version>23.0</guava.version>
